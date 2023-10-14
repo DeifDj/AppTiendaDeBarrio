@@ -14,7 +14,7 @@ public class Main {
         System.out.println(cliente);
         System.out.println(producto);
     }
-    Cliente cliente = new Cliente("Deivid","Farfan","Cll128B#91b_72");
+    Cliente cliente = new Cliente("Deivid Steven","Farfan","Cll128B#91b_72");
 
     Producto producto = new Producto("panela","3500","3","paquete de libra","002");
 
