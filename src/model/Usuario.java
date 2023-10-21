@@ -1,36 +1,24 @@
 package model;
 
 public class Usuario {
-    private int User;
-    private int password;
+    private final String User;
+    private final int password;
 
-
-    public Usuario(int user, int password) {
-        User = user;
+    public Usuario(String user, int password) {
+        this.User = user;
         this.password = password;
     }
 
-    public int getUser() {
-        return User;
-    }
+    public String getUser() { return User; }
 
-    public void setUser(int user) {
-        User = user;
-    }
-
-    public int getPassword() {
-        return password;
-    }
-
-    public void setPassword(int password) {
-        this.password = password;
-    }
+    public int getPassword() { return password; }
 
     @Override
     public String toString() {
         return "Usuario{" +
-                "User=" + User +
+                "User='" + User + '\'' +
                 ", password=" + password +
                 '}';
     }
 }
+
