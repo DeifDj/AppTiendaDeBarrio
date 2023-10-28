@@ -14,7 +14,7 @@ public class TiendaDeBarrio {
     final List<Usuario> usuarioList = new ArrayList<>();
     final List<Producto> productoList = new ArrayList<>();
     final List<model.Cliente> clienteList = new ArrayList<>();
-    public  void addUsuario(Usuario usuario) {
+    public  void addUsurious(Usuario usuario) {
         if (usuarioList.contains(usuario)) {
             usuarioList.add(usuario);
         }

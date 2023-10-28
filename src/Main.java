@@ -8,7 +8,14 @@ public class Main {
     public static void main(String[] args) {
 
         TiendaDeBarrio tiendaDeBarrio = new TiendaDeBarrio();
-
+ enum TiendaDeBarrio{
+    enterUser,
+    addProduct,
+    removeProduct,
+    updateProduct,
+    quantityProduct,
+    changeproduct,
+}
         int option = displayMenu();
         while (option !=7){
 
@@ -31,28 +38,31 @@ public class Main {
       System.out.println("Enter the Password: ");
       int password = scanner.nextInt();
       Usuario usuario = new Usuario(user, password);
-      tiendaDeBarrio.addUsuario(usuario);
+      tiendaDeBarrio.addUsurious(usuario);
     }
     private static void addProduct(TiendaDeBarrio tiendaDeBarrio){
       Scanner scanner = new Scanner(System.in);
       System.out.println("Enter Name: ");
       String name = scanner.nextLine();
       System.out.println("Enter price: ");
-      String price = scanner.nextLine();
+      double price = scanner.nextDouble();
       System.out.println("enter amount: ");
-      String amount = scanner.nextLine();
+      String amount = scanner.next();
       System.out.println("Enter description: ");
-      String description = scanner.nextLine();
+      String description = scanner.next();
       Producto producto = new Producto(name, price, amount, description);
       tiendaDeBarrio.addProducto(producto);
+      System.out.println(producto.toString());
 
-    }
+
+        }
+
     private static void removeProduct(TiendaDeBarrio tiendaDeBarrio){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Name: ");
         String name = scanner.nextLine();
         System.out.println("Enter price: ");
-        String price = scanner.nextLine();
+        double price = scanner.nextDouble();
         System.out.println("enter amount: ");
         String amount = scanner.nextLine();
         System.out.println("Enter description: ");
@@ -65,7 +75,7 @@ public class Main {
         System.out.println("Enter Name: ");
         String name = scanner.nextLine();
         System.out.println("Enter price: ");
-        String price = scanner.nextLine();
+        double price = scanner.nextDouble();
         System.out.println("enter amount: ");
         String amount = scanner.nextLine();
         System.out.println("Enter description: ");

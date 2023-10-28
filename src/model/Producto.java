@@ -2,12 +2,12 @@ package model;
 
 public class Producto {
     private String name;
-    private String price;
+    private double price;
     private String amount;
     private String description;
 
 
-    public Producto(String name, String price, String amount, String description) {
+    public Producto(String name, double price, String amount, String description) {
         this.name = name;
         this.price = price;
         this.amount = amount;
@@ -23,11 +23,11 @@ public class Producto {
         this.name = name;
     }
 
-    public String getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
